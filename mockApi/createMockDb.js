@@ -4,9 +4,15 @@ const path = require('path');
 const mockData = require('./mockData');
 
 const { users } = mockData;
-const data = JSON.stringify({ users });
-const filepath = path.join(__dirname, 'db.json');
+const userData = JSON.stringify({ users });
+const userDataPath = path.join(__dirname, 'users.json');
+fs.writeFile(userDataPath, userData, function(err) {
+  err ? console.log(err) : console.log('User DB created.');
+});
 
-fs.writeFile(filepath, data, function(err) {
+const { messages } = mockData;
+const messagesData = JSON.stringify({ messages});
+const messagesDataPath = path.join(__dirname, 'db.json');
+fs.writeFile(messagesDataPath, messagesData, function(err) {
   err ? console.log(err) : console.log('Mock DB created.');
 });

@@ -1,1 +1,1 @@
-{"users":[{"id":1,"username":"jsmith","password":"1234","createdAt":1569268837119},{"id":2,"username":"jdoe","password":"4567","createdAt":1569268837600}]}
+{"messages":[{"id":1,"from":"Jack","subject":"Saying hi","message":"Hey there buddy!"},{"id":2,"from":"Jane","subject":"Hello World","message":"Did you know why we use the term \"hello world\"? Apparently it' from some old C coding book!"}]}

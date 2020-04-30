@@ -2,7 +2,9 @@
 [![code examples](https://iorecipes.com/c/2020-react-recipes/repo-badge)](https://iorecipes.com/c/2020-react-recipes)
 
 ## Notes
-* Mock API with json-server. We use a 400ms timeout to simulate a slowish api.
+### Mock API 
+* json-server with JWT auth
+* 400ms timeout to simulate a slowish api.
 * 
 
 The repository and demo of the recipe for [https://iorecipes.com/r/react-forms][ioRecipeLink].
