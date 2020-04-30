@@ -26,7 +26,7 @@ server.use(function(req, res, next) {
 // Declaring custom routes below. Add custom routes before JSON Server router
 
 // Auth
-const userdb = JSON.parse(fs.readFileSync('./users.json', 'UTF-8'));
+const userdb = JSON.parse(fs.readFileSync(path.join(__dirname, './users.json'), 'UTF-8'));
 const SECRET_KEY = '123456789SECRETKEY';
 const expiresIn = '1h';
 

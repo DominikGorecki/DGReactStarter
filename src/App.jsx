@@ -15,10 +15,10 @@ const App = () => {
 
   return(
     <>
-      <header>
-        <Navbar />
-      </header>
       <Router history={history}>
+        <header>
+          <Navbar token={token} />
+        </header>
         <Switch>
           <PrivateRoute
             token={token}

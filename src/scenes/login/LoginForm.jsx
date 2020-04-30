@@ -100,14 +100,18 @@ const LoginForm = ({setToken, history}) => {
   };
 
   return (
-    <Card body>
-      <Card.Title>Login</Card.Title>
-      {RenderFormik(submitFunction)}
-      {apiErrors && 
+    <>
+      <Card body>
+        <Card.Title>Login</Card.Title>
+        {RenderFormik(submitFunction)}
+        {apiErrors && 
         renderApiErrors()
-      }
-
-    </Card>
+        }
+      </Card>
+      <hr />
+      <small>test@test.com</small>
+      <small>Test!@34</small>
+    </>
   );
 };
 

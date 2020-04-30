@@ -1,8 +1,9 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from './ioRecipesLogo.svg';
+import { Link } from 'react-router-dom';
 
-const DGNavbar = () => {
+const DGNavbar = ({token}) => {
   return(
     <Navbar bg="dark" variant="dark" >
       <Navbar.Brand href="https://iorecipes.com">
@@ -14,6 +15,16 @@ const DGNavbar = () => {
         />{' '} ____ 
         Starter Project 
       </Navbar.Brand>
+      <Navbar.Collapse className="justify-content-end">
+        <Navbar.Text>
+          {token && 
+      <Link to='/logout'>Logout</Link>
+          }
+          {!token && 
+      <Link to='/login'>Login</Link>
+          }
+        </Navbar.Text>
+      </Navbar.Collapse>
     </Navbar>
   );
 };
